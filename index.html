@@ -16,22 +16,26 @@
 
     <!-- container1 -->
     <div class="container1">
-        <p class="number">10
-            <span>hr</span>
-        </p>
-        <p class="number">30
+        <div class="number">
+            <p id="min">00</p>
             <span>min</span>
-        </p>
-        <p class="number">11
+        </div>
+        <div class="number">
+            <p id="sec">00</p>
             <span>sec</span>
-        </p>
+        </div>
+        <div class="number">
+            <p id="ms">00</p>
+            <span>ms</span>
+        </div>
     </div>
     <!-- container 2 -->
     <div class="container2">
-        <button>Stop</button>
-        <button>Reset</button>
-        <!-- <button>Continue</button>
-        <button>Start</button> -->
+        <button id="stopbtn" onclick="stop()">Stop</button>
+        <button id="resetbtn" onclick="reset()">Reset</button>
+        <button id="startbtn" onclick="start()">Start</button>
+        <!-- <button>Start</button>  -->
     </div>
 </body>
+<script src="script.js"></script>
 </html>
